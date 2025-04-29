@@ -63,3 +63,58 @@ const convertToObject = hobbies.map((item) => ({ text: item }));
 
 // console.log(editedHobbies);
 // console.log(convertToObject);
+
+//DESTRUCTURING
+
+//destructuring in array
+const [firstName, lastName] = ["Watanabe", "Toru"];
+
+// console.log(firstName);
+// console.log(lastName);
+
+//destructuring in object
+const { name, age, job } = {
+  name: "Watanabe Toru",
+  age: 22,
+  job: "Student",
+};
+
+// console.log("Full Name: " + name + "\nAge: " + age + "\nJob: " + job);
+
+//SPREAD OPERATOR
+const jobs = ["student", "lecturer", "president", "class rep."];
+const newJobs = ["admin", "assistant"];
+
+const mergedJobs = [...jobs, ...newJobs];
+
+// console.log(mergedJobs);
+// console.log(jobs);
+
+const student = {
+  name: "Nagasawa",
+  age: 23,
+  job: "student",
+};
+
+const cClass = {
+  isClass: true,
+  ...student,
+};
+
+// console.log(cClass);
+
+//CONTROL STRUCTURES
+
+// const input = prompt("Your name: ");
+
+// if (input === "watanabe") {
+//   alert("Hello " + input);
+// } else if (input === "nagasawa") {
+//   alert("Hello " + input);
+// } else {
+//   alert("Who are you??");
+// }
+
+for (const job of jobs) {
+  console.log(job);
+}
